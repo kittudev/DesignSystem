@@ -1,0 +1,55 @@
+/* _misc.scss — small helpers and resets */
+
+/* Focus ring */
+:root {
+  --quinf-focus-ring: 0 0 0 3px rgba(27, 89, 248, 0.35);
+}
+:where(a,button,[role="button"],input,select,textarea):focus {
+  outline: none;
+  box-shadow: var(--quinf-focus-ring);
+}
+
+/* Hide visually, keep accessible */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Elevation helpers */
+.elev-0 { box-shadow: none; }
+.elev-1 { box-shadow: var(--quinf-box-shadow-sub); }
+.elev-2 { box-shadow: var(--quinf-box-shadow-main); }
+
+/* Container */
+.container {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Link reset using tokens */
+a.link {
+  color: var(--quinf-blue-color);
+  text-decoration: none;
+}
+a.link:hover { text-decoration: underline; }
+
+/* Border helpers */
+.border       { border: 1px solid var(--quinf-gray-200); }
+.border-0     { border: 0; }
+.rounded      { border-radius: 8px; }
+.rounded-sm   { border-radius: 4px; }
+.rounded-lg   { border-radius: 12px; }
+
+/* Text colors via tokens/aliases */
+.text-primary { color: var(--quinf-color-text-primary, var(--quinf-text-color)); }
+.text-muted   { color: var(--quinf-color-text-muted, var(--quinf-config-color)); }
+.text-link    { color: var(--quinf-color-text-link, var(--quinf-blue-color)); }
+
+/* Background helpers */
+.bg-surface { background: var(--quinf-color-bg-surface, var(--quinf-bg-content)); }
+.bg-subtle  { background: var(--quinf-color-bg-subtle, var(--quinf-bg-content-sub)); }
+.bg-accent  { background: var(--quinf-color-bg-accent, var(--quinf-bg-theme-color)); }

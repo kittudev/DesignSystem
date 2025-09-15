@@ -1,0 +1,657 @@
+/* _mixins.scss — SCSS mixins using only --quinf-* tokens */
+
+/* ===== executetargetdrop ===== */
+@mixin executetargetdrop {
+  font: var(--quinf-font-family-small-main-bold);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+}
+@mixin executetargetdropboldhead {
+  font: var(--quinf-font-family-intent-sub-bold);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+}
+@mixin executetargetdropbold {
+  font: var(--quinf-font-family-intent-bold);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+}
+
+/* ===== intent-css start ===== */
+@mixin intentlabel {
+  text-align: left;
+  font: var(--quinf-font-intent-sans);
+  letter-spacing: 0;
+  color: var(--quinf-config-color);
+  opacity: var(--quinf-opacity, 1);
+}
+@mixin intentmodallabel {
+  text-align: left;
+  font: var(--quinf-font-modal-sans);
+  letter-spacing: 0;
+  color: var(--quinf-config-color);
+  opacity: var(--quinf-opacity, 1);
+}
+@mixin mar { margin: 10px 0 20px; }
+
+@mixin intentlegend {
+  text-align: left;
+  font: var(--quinf-font-family-small-main);
+  letter-spacing: -0.3px;
+  color: var(--quinf-config-color);
+  opacity: 1;
+}
+@mixin intentadd {
+  text-align: left;
+  font: var(--quinf-font-family-small-main);
+  letter-spacing: -0.35px;
+  color: var(--quinf-addcolor) !important;
+  opacity: 1;
+}
+@mixin field-analysis-test {
+  font-size: 10px;
+  font-weight: 600;
+}
+@mixin intent-sub-header {
+  font: var(--quinf-font-family-mini-main-norm);
+  letter-spacing: -0.3px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin intent-sub-header-italic {
+  font: var(--quinf-font-italic-mini);
+  letter-spacing: -0.3px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin intent-mini-header {
+  text-align: left;
+  font: var(--quinf-font-family-micro-main-bold);
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin validation-message {
+  margin-top: 5px !important;
+  height: 15px !important;
+}
+@mixin intent-main {
+  text-align: left;
+  font: var(--quinf-font-family-intent);
+  color: var(--quinf-text-color);
+  letter-spacing: -0.5px;
+  opacity: 1;
+}
+@mixin intent-label-modal {
+  text-align: left;
+  font: var(--quinf-font-family-small-main-norm);
+  letter-spacing: -0.35px;
+  color: var(--quinf-config-color);
+  opacity: 1;
+}
+@mixin sc-intent-dash {
+  font: var(--quinf-font-family-sub-main-bold);
+  color: var(--quinf-theme-color);
+  letter-spacing: 0;
+  text-align: center;
+}
+@mixin sc-intent-popup-label {
+  font: var(--quinf-font-family-sub-main-bold);
+  color: var(--quinf-text-color);
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+@mixin bg-intent {
+  background: var(--quinf-bg-content);
+  border-radius: 2px;
+  opacity: 1;
+}
+@mixin bg-intent-service {
+  background: var(--quinf-bg-content-sub);
+  border: 0.25px solid #B5B5B5;
+  opacity: 1;
+}
+/* ===== intent-css end ===== */
+
+/* ===== sc-changes start ===== */
+@mixin bord-api {
+  padding: 0 15px;
+  height: 36px;
+  color: var(--quinf-blue-color);
+  border: var(--quinf-api-border);
+  font-weight: var(--quinf-font-header-weight);
+  display: flex;
+  align-items: center;
+  border-radius: var(--quinf-font-size-main-sub);
+}
+@mixin apilabel {
+  font-size: var(--quinf-font-size-mini-main);
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin ergsummarylabel {
+  font: normal normal 600 25px Inter;
+  color: var(--quinf-dda-color);
+  opacity: 1;
+}
+@mixin borderdash {
+  border: 1px solid var(--quinf-webkit-bgcolor);
+  background: var(--quinf-bg-dash);
+  border-radius: 5px;
+}
+@mixin da-main {
+  text-align: left;
+  font: var(--quinf-font-family-sub-main);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin da-main-mini {
+  text-align: left;
+  font: var(--quinf-font-family-mini-huge);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin erg-main {
+  text-align: left;
+  font: var(--quinf-font-family-big);
+  letter-spacing: -0.45px;
+  color: var(--quinf-dda-top-color);
+  opacity: 1;
+}
+@mixin da-count {
+  text-align: center;
+  font: var(--quinf-font-family-big-norm);
+  letter-spacing: 0;
+  opacity: 1;
+}
+@mixin sc-gbl-add-bg {
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  border: 0.5px solid var(--quinf-addcolor);
+}
+@mixin sc-gbl-add {
+  font: var(--quinf-font-family-mini-main);
+  letter-spacing: 0;
+  color: var(--quinf-addcolor);
+  opacity: 1;
+}
+@mixin sc-check-bg {
+  background: var(--quinf-sc-bg);
+  border: 0.25px solid var(--quinf-sc-bg-check-color);
+  border-radius: var(--quinf-font-size-small-main, 12px);
+  opacity: 1;
+}
+@mixin sc-url-link {
+  font: var(--quinf-font-family-small-main-norm);
+  letter-spacing: 0;
+  color: var(--quinf-blue-color);
+  opacity: 1;
+}
+@mixin sc-add {
+  font: var(--quinf-font-family-small-main-norm);
+  letter-spacing: -0.33px;
+  color: var(--quinf-addcolor);
+  opacity: 1;
+}
+@mixin intent-map-abc {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 4px;
+  color: var(--quinf-text-color);
+}
+@mixin sc-notification {
+  text-align: left;
+  font: var(--quinf-font-family-sub-main-norm);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin sc-notification-sub {
+  text-align: left;
+  font: var(--quinf-font-family-small-main-norm);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin configsubheadertitle {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main-norm);
+  letter-spacing: -0.25px;
+  color: var(--quinf-config-color);
+  opacity: 1;
+}
+@mixin configsubheadertitledesc {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main-norm);
+  letter-spacing: -0.25px;
+  color: var(--quinf-blue-color);
+  opacity: 0.54;
+}
+@mixin configsubtitle {
+  text-align: left;
+  font: var(--quinf-font-family-sub-main-norm);
+  letter-spacing: -0.25px;
+  color: var(--quinf-config-color);
+  opacity: 1;
+}
+@mixin synchtitle {
+  text-align: left;
+  font: var(--quinf-font-family-sub-main);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin btntitle {
+  text-align: left;
+  font: var(--quinf-font-family-sub-main);
+  letter-spacing: -0.35px;
+  color: var(--quinf-blue-color);
+  opacity: 1;
+}
+@mixin panel-theme {
+  background: var(--quinf-sc-bg);
+  color: var(--quinf-panel-theme-color);
+  border-color: var(--quinf-panel-theme-color);
+  box-shadow: var(--quinf-box-shadow-main);
+  opacity: 1;
+}
+@mixin sc-dash-bg {
+  border-radius: 2px;
+  opacity: 1;
+  text-align: center;
+  font: var(--quinf-font-family-big-bold);
+  letter-spacing: 0;
+}
+@mixin scheading {
+  text-align: left;
+  font: var(--quinf-font-family-small-main-bold);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 0.84;
+}
+@mixin sc-filter-div {
+  background: var(--quinf-sc-bg);
+  border: 1px solid var(--quinf-sc-filter-color);
+  border-radius: 3px;
+  opacity: 1;
+}
+@mixin sc-filter-block { padding: 0; margin: 0; }
+
+@mixin more-button-deepAssesment {
+  color: var(--quinf-blue-color);
+  font-weight: 700;
+  font-size: 13px;
+  font-style: normal;
+}
+@mixin dda-forcast-date {
+  font-size: var(--quinf-font-size-small-main);
+  color: var(--quinf-forecast-color);
+  font-weight: 400;
+  background-color: var(--quinf-transparent-color);
+}
+@mixin dda-senti {
+  font-size: var(--quinf-font-size-eleven);
+  font-weight: 400;
+  text-align: center;
+  width: auto;
+}
+@mixin calender-date {
+  border: 1px solid var(--quinf-contpan-color);
+  padding: 5px 0 5px 10px;
+  width: 100%;
+  height: 30px;
+}
+@mixin small-card-val-dda {
+  font-size: var(--quinf-font-size-mini-main);
+  color: var(--quinf-contpan-color);
+  font-weight: 500;
+}
+@mixin topfilter-heading {
+  color: var(--quinf-theme-color);
+  font-weight: var(--quinf-font-header-weight);
+  font-size: var(--quinf-font-size-main);
+}
+@mixin dda-badge {
+  display: inline-block;
+  font-size: var(--quinf-font-size-micro-main);
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  width: auto;
+}
+@mixin ergicon-da {
+  background: var(--quinf-theme-color);
+  width: 24px;
+  margin: 0 5px;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: var(--quinf-pointer);
+}
+@mixin dda-cluster {
+  cursor: var(--quinf-pointer);
+  border: 1px solid var(--quinf-cluster-color);
+  padding: 0 8px;
+  height: 30px;
+}
+@mixin jobscard {
+  text-align: left;
+  font: var(--quinf-font-family-micro-main-bold-popins);
+  letter-spacing: -0.25px;
+  color: var(--quinf-theme-color);
+}
+@mixin jobscardsub {
+  text-align: left;
+  font: var(--quinf-font-family-nano-main-norm-popins);
+  letter-spacing: -0.2px;
+  color: var(--quinf-theme-color);
+}
+@mixin percent-style {
+  text-align: left;
+  font: var(--quinf-font-family-micro-main-medium-Helv);
+  letter-spacing: -0.25px;
+  color: var(--quinf-percent-color);
+  opacity: 1;
+}
+@mixin cardnumber {
+  text-align: center;
+  font: var(--quinf-font-family-main-bold);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin carddiv {
+  text-align: left;
+  font: var(--quinf-font-family-main);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin card-block {
+  background: var(--quinf-background-color);
+  border: 0.25px solid #e0e2e9;
+  border-radius: 3px;
+  opacity: 1;
+}
+@mixin card-bg-prime {
+  background: var(--quinf-bg-theme-color);
+  border-radius: 2px;
+  opacity: 1;
+}
+@mixin p-card-check {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main);
+  letter-spacing: -0.3px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin mc-card-title {
+  font: var(--quinf-font-family-mini-main-bold);
+  letter-spacing: -0.3px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin p-card-check-blue {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main);
+  letter-spacing: 0;
+  color: var(--quinf-blue-color);
+  opacity: 1;
+}
+@mixin card-title { padding-left: 10px; }
+@mixin card-body { padding-left: 1em; padding-top: 0; padding-bottom: 10px; }
+@mixin titletext {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main);
+  letter-spacing: -0.3px;
+  color: var(--quinf-text-color);
+  opacity: 0.54;
+}
+@mixin titlename {
+  text-align: left;
+  font: var(--quinf-font-family-small-main);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin configtitle {
+  text-align: left;
+  font: var(--quinf-font-family-main);
+  letter-spacing: -0.35px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin ml-info-color {
+  font: var(--quinf-font-unique);
+  letter-spacing: -0.33px;
+  color: var(--quinf-background-color);
+  opacity: 1;
+}
+@mixin cardcount {
+  text-align: left;
+  font: var(--quinf-font-family-big);
+  letter-spacing: 0;
+  color: var(--quinf-text-color);
+  opacity: 0.84;
+}
+@mixin cardcountbold {
+  text-align: left;
+  font: var(--quinf-font-family-big-bold);
+  letter-spacing: -0.55px;
+  color: var(--quinf-text-color);
+  opacity: 1;
+}
+@mixin text-align-left  { text-align: left; }
+@mixin text-align-right { text-align: right; }
+@mixin text-align-center{ text-align: center; }
+@mixin open-sc {
+  text-align: left;
+  font: var(--quinf-font-family-small-main);
+  letter-spacing: 0;
+  color: var(--quinf-blue-color);
+  opacity: 1;
+}
+@mixin open-sc-bg {
+  text-align: left;
+  font: var(--quinf-font-family-small-main);
+  letter-spacing: 0;
+  color: var(--quinf-background-color);
+  opacity: 1;
+}
+/* ===== sc-changes end ===== */
+
+/* ===== Cards & layout ===== */
+@mixin cardrow { padding-left: 6px; }
+@mixin cardtitlepadding { padding-left: 0; }
+@mixin cardbodypadding { padding-left: 0; }
+@mixin cardfooterpadding { padding-left: 0; }
+
+@mixin cardmargin {
+  background: var(--quinf-background-color);
+  box-shadow: var(--quinf-box-shadow-sub);
+  border: 0.1px solid var(--quinf-background-color);
+  opacity: 1;
+  border-radius: 5px;
+  margin: 5px;
+}
+@mixin topheader { padding: 0 0 0 12px; margin: 0 0 14px 0; }
+@mixin breadcrumbtopheader { padding: 0 0 0 12px; margin: 0; }
+@mixin topsubheader { margin-bottom: 4px; }
+@mixin headingmarginadjust { margin-right: 2%; display: flex; }
+@mixin topsubheaderpadding { padding-top: 6px; }
+@mixin header {
+  text-align: left;
+  font: var(--quinf-font-family-mini-main);
+  letter-spacing: -0.45px;
+  opacity: var(--quinf-opacity, 1);
+}
+
+/* ===== User management ===== */
+@mixin btn-info-usermanagement {
+  height: 36px;
+  background-color: var(--quinf-blue-color);
+  border-color: var(--quinf-blue-color);
+  color: var(--quinf-background-color);
+  font-size: var(--quinf-font-size-small-main);
+  font-weight: var(--quinf-font-header-weight);
+  padding: 0 10px;
+  width: auto;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+@mixin card-footer-usermanagement {
+  background: transparent;
+  border-top: 1px solid var(--quinf-big-color);
+  margin: 5px 0 0;
+}
+@mixin newitemcard {
+  background: var(--quinf-um-card-color) 0 0 no-repeat padding-box;
+  border: 1px dashed var(--quinf-dashed-color);
+  border-radius: 6px;
+  opacity: var(--quinf-opacity, 1);
+}
+@mixin display-usermanagement {
+  opacity: 1;
+  letter-spacing: 0.28px;
+  text-align: left;
+  color: var(--quinf-text-color);
+  font-size: var(--quinf-font-size-small-main);
+}
+@mixin nouserTemplate {
+  background: var(--quinf-um-card-color) 0 0 no-repeat padding-box;
+  border: 1px dashed var(--quinf-dashed-color);
+  border-radius: 6px;
+  opacity: var(--quinf-opacity, 1);
+}
+@mixin noUser { height: calc(150vh - 220px); }
+@mixin listingWrapper { overflow: auto; overflow-x: hidden; height: calc(100vh - 240px); }
+@mixin textellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--quinf-blue-color); }
+@mixin sureText { text-align: left; font: var(--quinf-font-family-small-main); color: var(--quinf-text-color); }
+@mixin popup-heading { font: var(--quinf-font-family-big); letter-spacing: 0; color: var(--quinf-text-color); opacity: 1; }
+@mixin title-usermanagement { font: var(--quinf-font-family-sub-main); letter-spacing: 0; color: var(--quinf-text-color); opacity: var(--quinf-opacity, 1); }
+@mixin plusiconblock { position: absolute; right: 4rem; top: 5.2rem; cursor: pointer; z-index: 5; }
+@mixin pluscirclesize { font-size: 3rem; }
+@mixin userDetails { overflow: hidden; text-overflow: ellipsis; padding: 1rem !important; }
+@mixin footer { width: 100% !important; bottom: 0; background: var(--quinf-background-color); left: 0; }
+@mixin table-expandable-text { text-align: left; font: var(--quinf-font-family-mini-main); color: var(--quinf-um-tabX-color); opacity: 0.74; }
+@mixin subtitle-usermanagement { font: var(--quinf-font-family-mini-main); color: var(--quinf-text-color); opacity: 0.76; }
+@mixin nameUser { font: var(--quinf-font-family-small-main); color: var(--quinf-nameUser-color); opacity: var(--quinf-opacity, 1); }
+@mixin deepassesement-name { font: var(--quinf-font-family-small-main); letter-spacing: 0; color: var(--quinf-text-color); opacity: var(--quinf-opacity, 1); }
+@mixin open-button { background: transparent; border: none; text-align: left; font: var(--quinf-font-family-small-main); color: var(--quinf-blue-color); opacity: 1; text-transform: capitalize; }
+@mixin pagination-title-usermanagement { font: var(--quinf-font-family-small-main); letter-spacing: -0.35px; color: var(--quinf-text-color); opacity: var(--quinf-opacity, 1); padding-left: 25px; }
+@mixin pagination-align-usermanagement { float: right; }
+@mixin pagination-entries-usermanagement { float: left; }
+@mixin personalInfo-usermanagement { text-overflow: ellipsis; width: 100%; flex: 1; }
+@mixin no-user-text { font: var(--quinf-font-family-big-norm); color: var(--quinf-nouser-color); opacity: var(--quinf-opacity, 1); }
+
+/* ===== Upload widgets ===== */
+@mixin upload-btn-wrapper { position: relative; overflow: hidden; display: inline-block; }
+@mixin btn-upload {
+  background-color: var(--quinf-blue-color);
+  border-radius: 6px;
+  border: 1px solid var(--quinf-blue-color);
+  color: var(--quinf-background-color);
+}
+@mixin btn-upload-aligns { height: 45px; width: 145px; cursor: var(--quinf-pointer); }
+@mixin uploaded-box { border: none; margin-bottom: 15px; margin-left: 2%; }
+@mixin ziplogo { background: var(--quinf-text-color) 0 0 no-repeat padding-box; border-radius: 6px; opacity: 0.2; color: var(--quinf-background-color); }
+@mixin my10 { margin: 10px 0; padding: 0; }
+@mixin filebody { float: left; width: 90%; }
+@mixin filesize { color: var(--quinf-text-color); opacity: 0.4; font-size: var(--quinf-font-size-small-main); }
+@mixin uploadingtxt { color: var(--quinf-upload-color); font-size: 10px; }
+@mixin progress-bar { background: var(--quinf-upload-color); height: 12px; }
+@mixin progress { height: 12px; background: var(--quinf-e6f-color); }
+@mixin adjusticon { position: absolute; right: 39px; }
+
+/* ===== Details side panel ===== */
+@mixin detailsSectionSC_CONFIG {
+  top: 55px;
+  height: calc(100vh - 3em);
+  position: fixed;
+  width: 25%;
+  z-index: 999;
+  right: 5px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 36px rgba(90, 90, 90, 0.2);
+}
+
+/* ===== OB items ===== */
+@mixin obItem-default {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 20px;
+  height: 18px;
+  width: max-content;
+}
+
+/* ===== Buttons (tokens) ===== */
+@mixin btn-primary-700 {
+  border-radius: 5px !important;
+  background: #1B59F8 !important;
+  padding: 5px 10px !important;
+  color: #FFFFFF !important;
+}
+@mixin btn-red-700 {
+  border-radius: 5px !important;
+  background-color: var(--quinf-error-700) !important;
+  padding: 5px 10px !important;
+  color: #FFFFFF !important;
+}
+@mixin btn-paginator {
+  border-radius: 5px !important;
+  padding: 4px 10px !important;
+  border: 1px solid var(--quinf-gray-200) !important;
+  background: #FFFFFF !important;
+  color: #4B5563 !important;
+}
+@mixin btn-outline-700 {
+  border-radius: 5px !important;
+  padding: 5px 10px !important;
+  border: 1px solid #1B59F8 !important;
+  background: #FFFFFF !important;
+  color: #1B59F8 !important;
+}
+@mixin btn-outline-grey {
+  border: 1px solid var(--quinf-gray-200) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  background: #FFFFFF !important;
+}
+
+/* ===== Typography helpers ===== */
+@mixin fontDecore { text-decoration: underline; }
+@mixin fontInter  { font-family: Inter !important; }
+
+@mixin font-8   { font-size: 8px !important; }
+@mixin font-9   { font-size: 9px !important; }
+@mixin font-10  { font-size: 10px !important; }
+@mixin font-11  { font-size: 11px !important; }
+@mixin font-11-5{ font-size: 11.5px !important; }
+@mixin font-12  { font-size: 12px !important; }
+@mixin font-13  { font-size: 13px !important; }
+@mixin font-12-3{ font-size: 12.39px !important; }
+@mixin font-14  { font-size: 14px !important; }
+@mixin font-15  { font-size: 15px !important; }
+@mixin font-16  { font-size: 16px !important; }
+@mixin font-18  { font-size: 18px !important; }
+@mixin font-20  { font-size: 20px !important; }
+
+@mixin weight-300 { font-weight: 300 !important; }
+@mixin weight-400 { font-weight: 400 !important; }
+@mixin weight-500 { font-weight: 500 !important; }
+@mixin weight-600 { font-weight: 600 !important; }
+@mixin weight-700 { font-weight: 700 !important; }
+
+@mixin pointCursor { cursor: pointer !important; }
+@mixin radius-8    { border-radius: 8px !important; }
+@mixin radius-4    { border-radius: 4px !important; }
+
+@mixin jobConfigurationAccordion { box-shadow: 0 4px 36px rgba(90, 90, 90, 0.02) !important; }
+@mixin jobConfigCard             { border: 1px solid var(--quinf-gray-200) !important; }
+@mixin gray-border-botton        { border-bottom: 1px solid var(--quinf-gray-200) !important; }
+@mixin tags-capsule              { background: rgba(227, 234, 251, 1); }
+@mixin required-asterisk         { color: #D5625C; font-weight: 700; margin-left: 3px; font-size: 1.2em; }
+@mixin jobconfigtab              { padding-left: 2.25rem !important; padding-right: 2.25rem !important; }

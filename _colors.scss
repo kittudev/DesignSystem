@@ -1,0 +1,21 @@
+/* _colors.scss — optional semantic aliases so components read nicely */
+
+:root {
+  /* Semantic aliases map to primitives; tweak freely without refactoring components */
+  --quinf-color-text-primary: var(--quinf-text-color);
+  --quinf-color-text-muted:   var(--quinf-config-color);
+  --quinf-color-text-link:    var(--quinf-blue-color);
+
+  --quinf-color-bg-page:      var(--quinf-background-color);
+  --quinf-color-bg-surface:   var(--quinf-bg-content);
+  --quinf-color-bg-subtle:    var(--quinf-bg-content-sub);
+  --quinf-color-bg-accent:    var(--quinf-bg-theme-color);
+
+  --quinf-color-border-subtle: var(--quinf-gray-200);
+  --quinf-color-border-strong: var(--quinf-big-color);
+
+  --quinf-color-success:      var(--quinf-percent-color);
+  --quinf-color-info:         var(--quinf-blue-color);
+  --quinf-color-warning:      #D97706;
+  --quinf-color-danger:       var(--quinf-error-700);
+}

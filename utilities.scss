@@ -1,0 +1,192 @@
+/* utilities.scss — classes that apply the mixins */
+
+@import "tokens";
+@import "mixins";
+
+/* Headers / headings */
+.dashbard-header { @include header; @include topheader; }  /* legacy */
+.dashboard-header { @extend .dashbard-header; }            /* alias */
+.dash-head       { @include header; }
+.topheader       { @include breadcrumbtopheader; }
+.headermargin    { @include topsubheader; }
+.heading         { @include topsubheaderpadding; }
+.headingdropdown { @include headingmarginadjust; }
+
+/* Card spacing/structure */
+.cardmargin        { @include cardmargin; }
+.carddiv           { @include carddiv; }
+.cardrow           { @include cardrow; }
+.cardtitlepadding  { @include cardtitlepadding; }
+.cardbodypadding   { @include cardbodypadding; }
+.cardfooterpadding { @include cardfooterpadding; }
+
+/* Buttons / footer */
+.btn-info-usermanagement    { @include btn-info-usermanagement; }
+.card-footer-usermanagement { @include card-footer-usermanagement; }
+.open-button                { @include open-button; }
+.footer                     { @include footer; }
+.btntitle                   { @include btntitle; }
+
+/* Titles / labels */
+.ergsummarylabel         { @include ergsummarylabel; }
+.apilabel                { @include apilabel; }
+.popup-heading           { @include popup-heading; }
+.title-usermanagement    { @include title-usermanagement; }
+.table-expandable-text   { @include table-expandable-text; }
+.subtitle-usermanagement { @include subtitle-usermanagement; }
+.nameUser                { @include nameUser; }
+.filename                { @include title-usermanagement; }  /* alias */
+.deepassesement-name     { @include deepassesement-name; }
+
+/* Layout helpers */
+.plusiconblock           { @include plusiconblock; }
+.pluscirclesize          { @include pluscirclesize; }
+.userDetails             { @include userDetails; }
+.listingWrapper          { @include listingWrapper; }
+.noUser                  { @include noUser; }
+.nouserTemplate          { @include nouserTemplate; }
+.newitemcard             { @include newitemcard; }
+.display-usermanagement  { @include display-usermanagement; }
+.personalInfo-usermanagement { @include personalInfo-usermanagement; }
+
+/* Uploads */
+.upload-btn-wrapper { @include upload-btn-wrapper; }
+.btn-upload         { @include btn-upload; }
+.btn-upload-aligns  { @include btn-upload-aligns; }
+.uploaded-box       { @include uploaded-box; }
+.ziplogo            { @include ziplogo; }
+.my10               { @include my10; }
+.filebody           { @include filebody; }
+.filesize           { @include filesize; }
+.uploadingtxt       { @include uploadingtxt; }
+.progress-bar       { @include progress-bar; }
+.progress           { @include progress; }
+.adjusticon         { @include adjusticon; }
+.margin-align       { @include mar; }
+.textellipsis       { @include textellipsis; }
+.sureText           { @include sureText; }
+
+/* Intent / typography family */
+.intent-mini-header        { @include intent-mini-header; }
+.intent-main               { @include intent-main; }
+.intent-sub-header         { @include intent-sub-header; }
+.intent-sub-header-italic  { @include intent-sub-header-italic; }
+.intentlegend              { @include intentlegend; }
+.intentlabel               { @include intentlabel; }
+.intent-label-modal        { @include intent-label-modal; }
+.intentmodallabel          { @include intentmodallabel; }
+.sc-intent-dash            { @include sc-intent-dash; }
+.sc-intent-popup-label     { @include sc-intent-popup-label; }
+.intentadd                 { @include intentadd; }
+
+/* Backgrounds / panels */
+.bg-intent         { @include bg-intent; }
+.bg-intent-service { @include bg-intent-service; }
+.sc-gbl-add        { @include sc-gbl-add; }
+.sc-gbl-add-bg     { @include sc-gbl-add-bg; }
+.sc-check-bg       { @include sc-check-bg; }
+.panel-theme       { @include panel-theme; }
+.card-block        { @include card-block; }
+.card-bg-prime     { @include card-bg-prime; }
+
+/* Dash / analytics */
+.sc-dash-bg     { @include sc-dash-bg; }
+.scheading      { @include scheading; }
+.da-main        { @include da-main; }
+.da-main-mini   { @include da-main-mini; }
+.da-count       { @include da-count; }
+.erg-main       { @include erg-main; }
+.borderdash     { @include borderdash; }
+.mc-card-title  { @include mc-card-title; }
+.jobscard       { @include jobscard; }
+.jobscardsub    { @include jobscardsub; }
+.percent-style  { @include percent-style; }
+.cardnumber     { @include cardnumber; }
+.titletext      { @include titletext; }
+.titlename      { @include titlename; }
+.card-body      { @include card-body; }
+.cardcount      { @include cardcount; }
+.cardcountbold  { @include cardcountbold; }
+.configtitle    { @include configtitle; }
+.configsubtitle { @include configsubtitle; }
+.configsubheadertitle { @include configsubheadertitle; }
+.sc-add         { @include sc-add; }
+.intent-map-abc { @include intent-map-abc; }
+.synchtitle     { @include synchtitle; }
+.sc-url-link    { @include sc-url-link; }
+.open-sc        { @include open-sc; }
+.open-sc-bg     { @include open-sc-bg; }
+.ml-info-color  { @include ml-info-color; }
+
+/* DDA / extras */
+.more-button-deepAssesment { @include more-button-deepAssesment; }
+.dda-forcast-date          { @include dda-forcast-date; }
+.dda-senti                 { @include dda-senti; }
+.dda-badge                 { @include dda-badge; }
+.ergicon-da                { @include ergicon-da; }
+.dda-cluster               { @include dda-cluster; }
+.small-card-val-dda        { @include small-card-val-dda; }
+.topfilter-heading         { @include topfilter-heading; }
+
+/* Pagination */
+.pagination-title-usermanagement  { @include pagination-title-usermanagement; }
+.pagination-align-usermanagement  { @include pagination-align-usermanagement; }
+.pagination-entries-usermanagement{ @include pagination-entries-usermanagement; }
+
+/* Alignment helpers */
+.text-align-left  { @include text-align-left; }
+.text-align-right { @include text-align-right; }
+.text-align-center{ @include text-align-center; }
+
+/* API inputs */
+.bord-api { @include bord-api; }
+
+/* Execution target typography */
+.executetargetdrop         { @include executetargetdrop; }
+.executetargetdropbold     { @include executetargetdropbold; }
+.executetargetdropboldhead { @include executetargetdropboldhead; }
+
+/* Validation */
+.validation-message { @include validation-message; }
+
+/* 3rd-party overrides kept as-is */
+.ng-select .ng-select-container,
+.ng-select .ng-select-container .ng-value-container {
+  min-height: 30px;
+  max-height: 30px;
+  padding: 0 !important;
+}
+.ng-select.ng-select-single .ng-select-container { height: 30px; }
+.p-splitter-panel-nested { overflow: auto !important; }
+svg.simple-flow-line      { position: absolute; inset: 0; width: 100%; height: 100%; }
+.m-auto                   { margin: auto; }
+.pr-0                     { padding-right: 0; }
+.p-multiselect            { width: 100% !important; }
+.modal-backdrop           { display: none; position: fixed; }
+.modal                    { background-color: rgba(0, 0, 0, 0.5); }
+
+/* Nav links */
+.nav-link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  line-height: 15px;
+}
+
+/* Absolute calendar overrides */
+.tab-pane .absoluteCalender .md-drppicker {
+  width: 100% !important;
+  box-shadow: none;
+  z-index: 1;
+}
+.absoluteCalenderStartDate input {
+  width: 42%;
+  margin: 20px 0 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 7px !important;
+}
+.tab-pane .absoluteCalender .md-drppicker .calendar       { max-width: 334px; }
+.tab-pane .absoluteCalender .md-drppicker .calendar-table { max-width: 340px; }
